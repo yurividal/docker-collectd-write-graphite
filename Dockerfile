@@ -14,5 +14,3 @@ RUN	pip install envtpl
 ADD     start_container /usr/bin/start_container
 RUN     chmod +x /usr/bin/start_container
 CMD     start_container
-CMD service collectd start && \
-    /bin/bash
