@@ -33,11 +33,9 @@ LoadPlugin write_graphite
  <Carbon>
    Host "{{ GRAPHITE_HOST }}"
    Port "{{ GRAPHITEPORT | default("2003") }}"
-   Prefix "{{ GRAPHITE_PREFIX | default("collectd.") }}"
+   Protocol "tcp"
+#   Prefix "{{ GRAPHITE_PREFIX | default("collectd.") }}"
    EscapeCharacter "_"
-   SeparateInstances true
-   StoreRates true
-   AlwaysAppendDS false
  </Carbon>
 </Plugin>
 
