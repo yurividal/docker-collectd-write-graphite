@@ -10,10 +10,6 @@ LoadPlugin network
 LoadPlugin csv
 LoadPlugin write_graphite
 
-<Plugin"network">
-    Listen"0.0.0.0"
-</Plugin>
-
 <Plugin network>
   <Listen "0.0.0.0" "{{ COLLECTD_LISTEN_PORT | default("25826") }}">
   </Listen>
