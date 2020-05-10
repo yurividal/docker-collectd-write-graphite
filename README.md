@@ -20,10 +20,13 @@ Environment variables
 * `HOST_NAME`
   - Will be sent to Graphite
   - Required
+* `COLLECTD_LISTEN_PORT`
+  - Port to Listen to Network collection
+  - Optional. Default 25826
 * `GRAPHITE_HOST`
   - Graphite IP or hostname
   - Required
-* `GRAPHITE_PORT`
+* `GRAPHITEPORT`
   - Graphite port
   - Optional, defaults to 2003
 * `GRAPHITE_PREFIX`
