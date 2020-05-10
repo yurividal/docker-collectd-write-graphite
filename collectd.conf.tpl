@@ -11,7 +11,7 @@ LoadPlugin csv
 LoadPlugin write_graphite
 
 <Plugin network>
-  <Listen "0.0.0.0" "{{ COLLECTD_LISTEN_PORT | default("25826") }}"
+  <Listen "0.0.0.0" "{{ COLLECTD_LISTEN_PORT | default("25826") }}">
   </Listen>
   Forward true
   ReportStats true
@@ -24,9 +24,9 @@ LoadPlugin write_graphite
   IgnoreSelected true
 </Plugin>
 
-<Plugin"csv">
-  DataDir"/var/lib/collectd/csv"
-  StoreRatestrue
+<Plugin csv>
+        DataDir "/var/lib/collectd/csv"
+        StoreRates false
 </Plugin>
 
 <Plugin "write_graphite">
@@ -38,4 +38,3 @@ LoadPlugin write_graphite
    EscapeCharacter "_"
  </Carbon>
 </Plugin>
-
