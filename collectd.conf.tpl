@@ -14,6 +14,13 @@ LoadPlugin write_graphite
     Listen"0.0.0.0"
 </Plugin>
 
+<Plugin network>
+  <Listen "0.0.0.0" "{{ COLLECTD_LISTEN_PORT | default("25826") }}">
+  </Listen>
+  Forward true
+  ReportStats true
+</Plugin>
+
 <Plugin interface>
   Interface "lo"
   Interface "/^veth.*/"
