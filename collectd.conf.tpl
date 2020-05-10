@@ -22,7 +22,8 @@ LoadPlugin write_graphite
 </Plugin>
 
 <Plugin"csv">
-  DataDir"/var/lib/collectd/csv"StoreRatestrue
+  DataDir"/var/lib/collectd/csv"
+  StoreRatestrue
 </Plugin>
 
 <Plugin "write_graphite">
