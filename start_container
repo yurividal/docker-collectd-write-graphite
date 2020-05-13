@@ -2,5 +2,5 @@
 
 envtpl /etc/collectd/collectd.conf.tpl
 
-collectd -f
+#collectd -f
 #service collectd start
